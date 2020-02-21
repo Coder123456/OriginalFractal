@@ -1,3 +1,4 @@
+
 public float a = 72;
  public float interval = 15;
  public void setup()
@@ -38,10 +39,10 @@ public void sier(int a, float x, float y, float len)
 {
   fill(250-a,250,250-a,400/75);
   stroke(150-a,150 - a,210);
-  square(x * 2,y * 2,(len));
-   square((300 - x) * 2,(300 - y) * 2,(len));
-   square( x * 2,(300 - y) * 2,(len));
-   square((300 - x) * 2,y * 2,(len));
+  rect(x * 2,y * 2,(len),(len));
+   rect((300 - x) * 2,(300 - y) * 2,(len),(len));
+   rect( x * 2,(300 - y) * 2,(len),(len));
+   rect((300 - x) * 2,y * 2,(len),(len));
  if(len > 50)
  {
    sier(a-(mouseX + mouseY/2),(x/1.1) ,(y/1.1) ,(len/1.005));
